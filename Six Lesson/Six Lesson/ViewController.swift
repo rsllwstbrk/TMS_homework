@@ -68,6 +68,9 @@ class ViewController: UIViewController {
                 print(" ")
                 
                 // задание 6
+
+                let newArr = array.map { $0.replacingOccurrences(of: " ", with: "") }
+        print(newArr)
                 
     }
 
