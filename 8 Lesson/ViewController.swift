@@ -9,12 +9,19 @@ import UIKit
 
 class Menu {
     
+    var barName: String = ""
+    var isElectronic: Bool = true
+    
+}
+
+class Positions {
+    
     var name: String = ""
     var price: Int = 0
     func food () {}
 }
 
-class snacks: Menu {
+class Snacks: Positions {
     override init () {
         super.init()
         name = "snacks"
@@ -25,7 +32,7 @@ class snacks: Menu {
     
 }
 
-class mainDishes: Menu {
+class MainDishes: Positions {
     override init () {
         super.init()
         name = "mainDishes"
@@ -36,7 +43,7 @@ class mainDishes: Menu {
     
 }
 
-class drinks: Menu {
+class Drinks: Positions {
     override init () {
         super.init()
         name = "drinks"
@@ -47,7 +54,7 @@ class drinks: Menu {
     
 }
 
-class desserts: Menu {
+class Desserts: Positions {
     override init () {
         super.init()
         name = "desserts"
@@ -63,24 +70,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let popcorn = snacks()
+        let popcorn = Snacks()
         popcorn.name = "Corny"
         popcorn.price = 12
         popcorn.food()
         
-        let wings = mainDishes()
+        let wings = MainDishes()
         wings.name = "Wingy"
         wings.price = 15
         wings.food()
 
         
-        let beer = drinks()
+        let beer = Drinks()
         beer.name = "Corny"
         beer.price = 18
         beer.food()
 
         
-        let cake = desserts()
+        let cake = Desserts()
         cake.name = "Moon"
         cake.price = 20
         cake.food()
