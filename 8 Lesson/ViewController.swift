@@ -9,10 +9,10 @@ import UIKit
 
 class Menu {
     
-    var mainDishes = Positions.self
-    var drinks = Positions.self
-    var snacks = Positions.self
-    var desserts = Positions.self
+    var mainDishes: Positions = MainDishes(name: "", cost: 0)
+    var snacks: Positions = Snacks(name: "", cost: 0)
+    var drinks: Positions = Drinks(name: "", cost: 0)
+    var desserts: Positions = Desserts(name: "", cost: 0)
     
 }
 
@@ -24,7 +24,20 @@ class Positions {
         self.name = name
         self.cost = cost
     }
-    func food() {print(name, cost)}
+    func food() {}
+}
+
+class Snacks: Positions {
+    override func food() {print(name, cost)}
+}
+class Drinks: Positions {
+    override func food() {print(name, cost)}
+}
+class MainDishes: Positions {
+    override func food() {print(name, cost)}
+}
+class Desserts: Positions {
+    override func food() {print(name, cost)}
 }
 
     
@@ -34,8 +47,8 @@ class Positions {
         override func viewDidLoad() {
             super.viewDidLoad()
 
-    var beer = Positions(name: "Bud", cost: 8)
-            beer.food()
+    var chips = Snacks(name: "lays", cost: 15)
+            chips.food()
             
             
         }
