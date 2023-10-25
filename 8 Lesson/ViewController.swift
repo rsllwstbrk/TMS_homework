@@ -11,6 +11,9 @@ class Menu {
     
     var barName: String = ""
     var isElectronic: Bool = true
+    var positions = Positions()
+    var name: String = ""
+    var price: Int = 0
     
 }
 
