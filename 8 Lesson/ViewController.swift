@@ -9,97 +9,36 @@ import UIKit
 
 class Menu {
     
-    var barName: String = ""
-    var isElectronic: Bool = true
-    var positions = Positions()
-    let chicken = MainDishes()
-    let cocktail = Drinks()
-    let potato = Snacks()
-    let iceCream = Desserts()
+    var mainDishes = Positions.self
+    var drinks = Positions.self
+    var snacks = Positions.self
+    var desserts = Positions.self
     
 }
 
 class Positions {
     
-    var name: String = ""
-    var price: Int = 0
-    func food () {}
+    var name = ""
+    var cost: Int = 0
+    init(name: String, cost: Int) {
+        self.name = name
+        self.cost = cost
+    }
+    func food() {print(name, cost)}
 }
 
-class Snacks: Positions {
-    override init () {
-        super.init()
-        name = "snacks"
-    }
-    override func food () {
-        print(name, price)
-    }
     
-}
-
-class MainDishes: Positions {
-    override init () {
-        super.init()
-        name = "mainDishes"
-    }
-    override func food () {
-        print(name, price)
-    }
     
-}
-
-class Drinks: Positions {
-    override init () {
-        super.init()
-        name = "drinks"
-    }
-    override func food () {
-        print(name, price)
-    }
-    
-}
-
-class Desserts: Positions {
-    override init () {
-        super.init()
-        name = "desserts"
-    }
-    override func food () {
-        print(name, price)
-    }
-    
-}
-
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    class ViewController: UIViewController {
         
-        let potato = Snacks()
-        potato.name = "Fries"
-        potato.price = 12
-        potato.food()
+        override func viewDidLoad() {
+            super.viewDidLoad()
+
+    var beer = Positions(name: "Bud", cost: 8)
+            beer.food()
+            
+            
+        }
         
-        let chicken = MainDishes()
-        chicken.name = "Spicy"
-        chicken.price = 15
-        chicken.food()
-
         
-        let cocktail = Drinks()
-        cocktail.name = "Long"
-        cocktail.price = 18
-        cocktail.food()
-
-        
-        let iceCream = Desserts()
-        iceCream.name = "Moon"
-        iceCream.price = 20
-        iceCream.food()
-
-
     }
-
-
-}
-
