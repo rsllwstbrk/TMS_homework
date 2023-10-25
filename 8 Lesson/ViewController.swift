@@ -12,8 +12,10 @@ class Menu {
     var barName: String = ""
     var isElectronic: Bool = true
     var positions = Positions()
-    var name: String = ""
-    var price: Int = 0
+    var snacks = Snacks()
+    var mainDishes = MainDishes()
+    var drinks = Drinks()
+    var desserts = Desserts()
     
 }
 
