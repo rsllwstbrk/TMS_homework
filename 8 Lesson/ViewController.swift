@@ -12,10 +12,10 @@ class Menu {
     var barName: String = ""
     var isElectronic: Bool = true
     var positions = Positions()
-    var snacks = Snacks()
-    var mainDishes = MainDishes()
-    var drinks = Drinks()
-    var desserts = Desserts()
+    let chicken = MainDishes()
+    let cocktail = Drinks()
+    let potato = Snacks()
+    let iceCream = Desserts()
     
 }
 
@@ -75,27 +75,27 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let popcorn = Snacks()
-        popcorn.name = "Corny"
-        popcorn.price = 12
-        popcorn.food()
+        let potato = Snacks()
+        potato.name = "Fries"
+        potato.price = 12
+        potato.food()
         
-        let wings = MainDishes()
-        wings.name = "Wingy"
-        wings.price = 15
-        wings.food()
+        let chicken = MainDishes()
+        chicken.name = "Spicy"
+        chicken.price = 15
+        chicken.food()
 
         
-        let beer = Drinks()
-        beer.name = "Corny"
-        beer.price = 18
-        beer.food()
+        let cocktail = Drinks()
+        cocktail.name = "Long"
+        cocktail.price = 18
+        cocktail.food()
 
         
-        let cake = Desserts()
-        cake.name = "Moon"
-        cake.price = 20
-        cake.food()
+        let iceCream = Desserts()
+        iceCream.name = "Moon"
+        iceCream.price = 20
+        iceCream.food()
 
 
     }
