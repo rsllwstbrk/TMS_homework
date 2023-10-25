@@ -24,20 +24,15 @@ class Positions {
         self.name = name
         self.cost = cost
     }
-    func food() {}
 }
 
 class Snacks: Positions {
-    override func food() {print(name, cost)}
 }
 class Drinks: Positions {
-    override func food() {print(name, cost)}
 }
 class MainDishes: Positions {
-    override func food() {print(name, cost)}
 }
 class Desserts: Positions {
-    override func food() {print(name, cost)}
 }
 
     
@@ -46,10 +41,14 @@ class Desserts: Positions {
         
         override func viewDidLoad() {
             super.viewDidLoad()
-
-    var chips = Snacks(name: "lays", cost: 15)
-            chips.food()
             
+            
+            func food (position: Positions) {
+                print("\(position.name)", "\(position.cost)")
+            }
+            food(position: Snacks(name: "Bud", cost: 13))
+            
+           
             
         }
         

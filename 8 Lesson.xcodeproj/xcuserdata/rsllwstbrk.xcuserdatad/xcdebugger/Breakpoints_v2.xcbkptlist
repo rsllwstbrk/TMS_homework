@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "755E19B2-2F03-4096-8942-306350DBCF14"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "25B0459B-BACC-47F3-8F50-C24FD749932A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "8 Lesson/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "Drinks"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "25B0459B-BACC-47F3-8F50-C24FD749932A - 31bcf59fe08a3ed7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__Lesson.MainDishes.__allocating_init(name: Swift.String, cost: Swift.Int) -&gt; __Lesson.MainDishes"
+                  moduleName = "8 Lesson"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rsllwstbrk/Desktop/tms/8%20Lesson/8%20Lesson/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "43">
+               </Location>
+               <Location
+                  uuid = "25B0459B-BACC-47F3-8F50-C24FD749932A - 6029baecd4c93790"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__Lesson.MainDishes.init(name: Swift.String, cost: Swift.Int) -&gt; __Lesson.MainDishes"
+                  moduleName = "8 Lesson"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rsllwstbrk/Desktop/tms/8%20Lesson/8%20Lesson/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "25B0459B-BACC-47F3-8F50-C24FD749932A - 366e1881958e11b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__Lesson.MainDishes.deinit"
+                  moduleName = "8 Lesson"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rsllwstbrk/Desktop/tms/8%20Lesson/8%20Lesson/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "25B0459B-BACC-47F3-8F50-C24FD749932A - 3e436e9a6b778fa3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__Lesson.MainDishes.__deallocating_deinit"
+                  moduleName = "8 Lesson"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rsllwstbrk/Desktop/tms/8%20Lesson/8%20Lesson/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
