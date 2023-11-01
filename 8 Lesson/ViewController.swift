@@ -13,11 +13,6 @@ class Restaurant {
     static let shared = Restaurant()
     private init () {}
     var count: Int = 0
-    func increaseDishes() {count += menu.mainDishes.cost}
-    func increaseSnacks() {count += menu.snacks.cost}
-    func increaseDrinks() {count += menu.drinks.cost}
-    func increaseDesserts() {count += menu.desserts.cost}
-    func increaseSoups() {count += menu.soups.cost}
     
 }
 
@@ -63,31 +58,31 @@ class Soups: Positions {}
         
         
         @IBAction func MainDishes(_ sender: UIButton) {
-            model.increaseDishes()
+            model.count += model.menu.mainDishes.cost
         }
         
         
         
         @IBAction func Snacks(_ sender: UIButton) {
-            model.increaseSnacks()
+            model.count += model.menu.snacks.cost
         }
         
         
         
         @IBAction func Drinks(_ sender: UIButton) {
-            model.increaseDrinks()
+            model.count += model.menu.drinks.cost
         }
         
         
         
         @IBAction func Desserts(_ sender: UIButton) {
-            model.increaseDesserts()
+            model.count += model.menu.desserts.cost
         }
         
         
         
         @IBAction func Soups(_ sender: UIButton) {
-            model.increaseSoups()
+            model.count += model.menu.soups.cost
         }
         
         
