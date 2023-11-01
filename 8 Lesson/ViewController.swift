@@ -9,36 +9,30 @@ import UIKit
 
 class Restaurant {
     
+    var menu = Menu()
     static let shared = Restaurant()
     private init () {}
-    let chicken = MainDishes(name: "Chicken", cost: 10)
-    let chips = Snacks(name: "Chips", cost: 5)
-    let cola = Drinks(name: "Cola", cost: 8)
-    let cake = Desserts(name: "Cake", cost: 9)
-    let borshch = Soups(name: "Borshch", cost: 10)
     var countDishes: Int = 0
     var countSnacks: Int = 0
     var countDrinks: Int = 0
     var countDesserts: Int = 0
     var countSoups: Int = 0
-    func increaseDishes() {countDishes += chicken.cost}
-    func increaseSnacks() {countSnacks += chips.cost}
-    func increaseDrinks() {countDrinks += cola.cost}
-    func increaseDesserts() {countDesserts += cake.cost}
-    func increaseSoups() {countSoups += borshch.cost}
+    func increaseDishes() {countDishes += menu.mainDishes.cost}
+    func increaseSnacks() {countSnacks += menu.snacks.cost}
+    func increaseDrinks() {countDrinks += menu.drinks.cost}
+    func increaseDesserts() {countDesserts += menu.desserts.cost}
+    func increaseSoups() {countSoups += menu.soups.cost}
     
 }
 
 class Menu {
     
     
-    
-    private init () {}
-    var mainDishes: Positions = MainDishes(name: "", cost: 0)
-    var snacks: Positions = Snacks(name: "", cost: 0)
-    var drinks: Positions = Drinks(name: "", cost: 0)
-    var desserts: Positions = Desserts(name: "", cost: 0)
-    var soups: Positions = Soups(name: "", cost: 0)
+    var mainDishes: Positions = MainDishes(name: "Chicken", cost: 10)
+    var snacks: Positions = Snacks(name: "Chips", cost: 5)
+    var drinks: Positions = Drinks(name: "Cola", cost: 8)
+    var desserts: Positions = Desserts(name: "Cake", cost: 9)
+    var soups: Positions = Soups(name: "Borshch", cost: 10)
     
 }
 
