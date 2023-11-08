@@ -5,4 +5,19 @@
 //  Created by Rsllwstbrk on 7.11.23.
 //
 
-import Foundation
+import UIKit
+
+class SecondViewController: UIViewController {
+    
+    func deleteNavBar() {
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        deleteNavBar()
+        
+    }
+    
+    
+}

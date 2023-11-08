@@ -5,4 +5,18 @@
 //  Created by Rsllwstbrk on 7.11.23.
 //
 
-import Foundation
+import UIKit
+
+class FirstViewController: UIViewController {
+    
+    func setupNavBar() {
+        self.navigationItem.title = "First"
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupNavBar()
+        
+    }
+
+}
